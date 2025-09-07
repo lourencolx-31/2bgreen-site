@@ -1,0 +1,26 @@
+import "./globals.css";
+
+export const metadata = {
+  title: "2BGREEN — Tokenização & Desenvolvimento Sustentável",
+  description: "Ajudamos países e cidades a financiar o desenvolvimento através da tokenização de ativos ambientais e soluções digitais soberanas.",
+  openGraph: {
+    title: "2BGREEN",
+    description: "Tokenização & soluções digitais para desenvolvimento sustentável",
+    url: "https://2bgreen.org",
+    siteName: "2BGREEN",
+    images: ["/og-image.png"],
+    locale: "pt_PT",
+    type: "website"
+  },
+  alternates: {
+    languages: { pt: "/pt", en: "/en", fr: "/fr" }
+  }
+};
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="pt">
+      <body>{children}</body>
+    </html>
+  );
+}
